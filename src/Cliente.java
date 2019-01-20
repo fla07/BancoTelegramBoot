@@ -12,10 +12,12 @@ public class Cliente {
       private String celular;
       private String email;
       private String endereco;
+      private String tpCliente;
       
-    public Cliente(String n, String e){
+    public Cliente(String n, String e, String tpC){
     	nome=n;
     	email=e;
+    	tpCliente =tpC;
     }
 	public String getNome() {
 		return nome;
@@ -40,5 +42,11 @@ public class Cliente {
 	}
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
+	}
+	public String getTpCliente(){
+		return tpCliente;
+	}
+	public void setTpCliente(String tpCliente){
+		this.tpCliente = tpCliente;
 	}
 }

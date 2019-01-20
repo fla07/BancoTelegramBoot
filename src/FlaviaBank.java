@@ -19,16 +19,24 @@ public class FlaviaBank {
    }
 	
 	public static void main(String[] args) {
-		String nomeaux, emailaux;
+		String nomeaux, emailaux, tpClienteaux;
 		FlaviaBank b=new FlaviaBank();
 		Scanner in =new Scanner(System.in);
-		int op=0;
-		while(op != 9){
-			 System.out.println("Tabajara Bank");
-			 System.out.println("1->Incluir Cliente  ");
+		int op = 00;
+		while(op != 0){
+			 System.out.println("Bem-vindo ao Flavia Bank");
+			 System.out.println("1->Incluir Cliente");
 			 System.out.println("2->Incluir Conta Corrente");
-			 System.out.println("3-> Listar Clientes");
-			 System.out.println("9->Finalizar programa ");
+			 System.out.println("3->Incluir Conta Poupança");
+			 System.out.println("4-> Listar dados do Cliente");
+			 System.out.println("5-> Depósito");
+			 System.out.println("6-> Emprestimo");
+			 System.out.println("7-> Saque");
+			 System.out.println("8-> Extrato");
+			 System.out.println("9-> Lançamentos");
+			 System.out.println("10-> Tarifas");
+			 System.out.println("11-> Saldo Devedor");
+			 System.out.println("0 ->Finalizar contato ");
 			 op=in.nextInt();
 			 in.nextLine();
 			 switch(op){
@@ -39,7 +47,8 @@ public class FlaviaBank {
 			 		    if(b.verificaCliente(nomeaux)== -1 ){
 			 		    	System.out.println("Digite o email do Cliente");
 			 		    	emailaux=in.nextLine();
-			 		    	b.cadastrarClientes(nomeaux, emailaux);
+			 		    	tpClienteaux = in.nextLine();
+							b.cadastrarClientes(nomeaux, emailaux, tpClienteaux);
 			 		    }else{
 				 		    System.out.println("Cliente ja Cadastrado!");
 			 		    }
@@ -57,8 +66,8 @@ public class FlaviaBank {
 		}
 	}
 	
-	public void cadastrarClientes(String n, String e){
-	     correntistas.add(new Cliente(n,e));	
+	public void cadastrarClientes(String n, String e, String tpC){
+	     correntistas.add(new Cliente(n,e,tpC));	
 	}
 	public void cadastrarContas(){
 		
