@@ -6,16 +6,39 @@
  * Turma 32SCJ
  *  
  */
-public abstract class Cliente {
-	// dados basicos para o cadastro do cliente
-	
-	private String nome;
-	private String cpf;
-	private String email;
-	private String celular;
-	private String tpCliente;
-	
-	// Inicializador da classe cliente. O cliente pode ser Titular ou Dependente
-	Cliente(String n, String cpf, String e, String c, String tpCli) {}
 
+public class Cliente {
+      private String nome;
+      private String celular;
+      private String email;
+      private String endereco;
+      
+    public Cliente(String n, String e){
+    	nome=n;
+    	email=e;
+    }
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getCelular() {
+		return celular;
+	}
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
 }
