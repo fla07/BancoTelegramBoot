@@ -5,20 +5,12 @@
  * Turma 32SCJ
  *  
  */
-public class FlaviaBank {
 
-	
-	
-	public FlaviaBank() {
-		
-	}
+public final class ClienteTitular extends Cliente {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public ClienteTitular(String n, String cpf, String e, String c, String tpCli) {
+		super(n, cpf, e, c, tpCli);
+		// TODO Auto-generated constructor stub
 	}
 
 }
