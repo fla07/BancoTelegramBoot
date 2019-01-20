@@ -1,5 +1,5 @@
-# BancoTelegramBoot
-Este projeto tem como objetivo ser o projeto final de avaliação da mátéria de  Fundamentos da Plataforma Java e UML do curso de MBA em Full Stack Developer SOA &amp; Internet of Things (32SCJ) da FIAP.
+# BancoTelegramBot
+
 
 Objetivo:
 
@@ -21,3 +21,11 @@ O objetivo desta atividade é criar um bot Telegram que simule um banco virtual,
 14. Tela de ajuda 
 
 Todas as operações devem ser armazenadas para futuras consultas em arquivo texto. 
+
+
+******************************************************************************************************************************************
+
+
+O bot Telegram deste projeto simula um sistema de banco simples com os pré requisitos acima. A documentação será feita a parte em formato pdf
+
+*****************************************************************************************************************************************
